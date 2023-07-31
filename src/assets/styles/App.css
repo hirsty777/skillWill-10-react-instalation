@@ -1,0 +1,56 @@
+.wrapper{
+    min-height:100vh;
+    display: grid;
+    grid-template-rows: 5rem auto;
+}
+
+
+.top-decoration{
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-size: 300% 300%;
+    animation: top-animation 5s infinite alternate ease-in-out;
+    animation-fill-mode: both;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes top-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;;
+    }
+}
+
+
+/*main conten*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-box{
+    width: 60%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+}
+.profile-image{
+    width:20rem;
+    height: 20rem;
+}
+

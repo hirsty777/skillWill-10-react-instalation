@@ -1,4 +1,5 @@
 //import logo from './logo.svg';
+import profile from '../assets/images/profile.png';
 import '../assets/styles/App.css'        //'./App.css';
 
 function App() {
@@ -19,7 +20,16 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div>
+    <div className='wrapper'>
+      <div className='top-decoration'>Simple Portgolio</div>
+      <main>
+        <div className='profile-box'>
+          <img src={profile} className="profile-image" alt="profile" />
+          <p>Hello I`m Lasha.<br/>Driven by a relentless desire for improvement,
+          I am committed to overcoming challenges and pushing my boundaries, all 
+          in the pursuit of becoming a proficient coder.</p>
+        </div>
+      </main>
     </div>
   );
 }
